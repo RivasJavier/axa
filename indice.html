@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+
+
+text-align: center;
+
+background-image: url("img/Front.jpg");
+background-repeat: repeat-x;
+background-position: 10px;
+background-attachment:fixed;
+
+}
+
+div.section{
+
+/*PARA INTERNET EXPLORER*/
+
+text-align: center;
+
+
+}
+
+table{
+
+margin: 0 auto;
+
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!--////////////////LLAMADA AJAX//////////////////////-->
+
+
+<div class="container">
+<div class="section">
+
+<button id="boton">Gnomos en esta ciudad</button>
+
+<table>
+<thead>
+
+	<tr>
+		
+		<th>Name</th>
+		<th>Age</th>
+		<th>Hair Color</th>
+		
+	</tr>
+	
+
+</thead>
+<tbody id="res">
+</tbody>
+
+</table>
+
+
+</div>
+</div>
+
+
+<!--//////////PEQUEÑO JUEGO///////////////////////-->
+
+
+<h1>Encuentra al Hobbit</h1>
+<canvas id="miCanvas" width="400px" height="400px">
+Tu navegador no soporta CANVAS
+</canvas>
+
+<br>
+
+<p id="distancia" style="border:1px solid"></p>
+<br>
+<br>
+
+<script src="js/helper.js"></script>
+<script src="js/game.js"></script>
+
+</body>
+</html>
